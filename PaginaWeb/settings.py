@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-112h%rebl^^ivoe9n1jnorr3an)0+)zkx!t3ewbtv22&b0iezn'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['miguelxd13.pythonanywhere.com']
 
 
 # Application definition
@@ -76,10 +76,15 @@ WSGI_APPLICATION = 'PaginaWeb.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+      'ENGINE': 'django.db.backends.mysql',
+       'NAME':'MiguelXD13$Veterinaria',
+       'USER': 'MiguelXD13',
+       'PASSWORD': 'E0411ctw',
+       'HOST': 'MiguelXD13.mysql.pythonanywhere-services.com'
+   }
 }
+
+
 
 
 # Password validation
