@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block contenido %}
+    <div class="row inicio">
+        <h1 class="cvs">CLÍNICA VETERINARIA SAN FERNANDO</h1>
+    </div>
+
+
+    <hr>
+
+
+    <div class="titulo col-12 text-center">
+        <h1>Sobre nosotros:</h1>
+    </div>
+    <div class="row txt-inicio">
+        <div class="ima">
+            <div class="i"><img src="{% static 'img/Local.jpg' %}" class="citaImg"></div>
+        </div>
+        <div class="tex">
+            <article>
+                <blockquote>
+                    <p style="padding-left: 20px;">
+                        Desde hace 30 años tratando junto a los mejores profesionales a tus mascotas, esa parte tan
+                        importante de tu vida. Contamos con:
+                    </p>
+                    <p style="padding-left: 20px;">
+                        - Un equipo de tres auxiliares de veterinaria y tres profesionales veterinarios en medicina
+                        interna y medicina preventiva, con experiencia en los ámbitos de reproducción, cardiología,
+                        traumatología, oftalmología y dermatología.
+                    </p>
+                    <p style="padding-left: 20px;">
+                        - Tres salas de consulta.
+                    </p>
+                    <p style="padding-left: 20px;">
+                        - Una sala de hospitalización.
+                    </p>
+                    <p style="padding-left: 20px;">
+                        - Un quirófano totalmente equipado.
+                    </p>
+                    <p>
+                        Por último ponemos a su disposición:
+                    </p>
+                    <p style="padding-left: 20px;">
+                        - Alimentos, dietas de prescripción y antiparasitarios.
+                    </p>
+                    <p style="padding-left: 20px;">
+                        Todo ello acompañado de lo más importante, el mejor trato posible hacia usted y su mascota.
+                    </p>
+                </blockquote>
+            </article>
+        </div>
+    </div>
+
+    <hr>
+        <div class="titulo col-12 text-center">
+            <h1>Dónde estamos:</h1>
+        </div>
+            <div class="row col-lg-8 offset-lg-2 mapa">
+                <iframe class="w-100 " src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.465920982959!2d-3.5329205485128665!3d40.42068087926335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42309cc7fa1521%3A0x213c58b9e4818797!2sCl%C3%ADnica%20Veterinaria%20San%20Fernando!5e0!3m2!1ses!2ses!4v1585694324455!5m2!1ses!2ses"
+                    frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+    </div>
+
+    <br>
+
+
+    <div class="row">
+        <div class="col-12 col-lg-3 col-md-6">
+            <a href="tel:+916695625" style="text-decoration: none;">
+            <div class="redesContainer phone">
+                <i><div class="iconSocial  fa fa-phone"></div></i>
+                <p class="socialText">Teléfono</p>
+                <p class="ph">91 669 56 25</p>
+            </div>
+        </a>
+        </div>
+        
+        <div class="col-12 col-lg-3 col-md-6">
+            <a href="tel:+601262476" style="text-decoration: none;">
+            <div class="redesContainer whatsapp">
+                <i class="fab fa-whatsapp iconSocial"></i>
+                <p class="socialText">Whatsapp</p>
+                <p class="ws">601 26 24 76</p>
+            </div>
+            </a>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+            <a href="https://www.instagram.com/clinicaveterinariasanfernando/?hl=es" style="text-decoration: none;">
+            <div class="redesContainer instagram">
+                 <i class="fab fa-instagram iconSocial"></i>
+                <p class="socialText">Instagram</p>
+                <p class="insta">@clinicaveterinariasanfernando</p>
+            </div>
+            </a>
+        </div>
+        <div class="col-12 col-lg-3 col-md-6">
+            <a href="https://www.facebook.com/clinicaveterinariasanfernando/?epa=SEARCH_BOX" style="text-decoration: none;">
+            <div class="redesContainer facebook">
+                <i><div class="iconSocial fab fa-facebook-f"></div></i>
+                <p class="socialText">Facebook</p>
+                <p class="fb">@clinicaveterinariasanfernando</p>
+            </div>
+            </a>
+        </div>
+
+
+
+
+    </div>
+    {%endblock%}
+
+</html>

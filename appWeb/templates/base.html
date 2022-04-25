@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinica San Fernando</title>
+  {% load static %}
+  <link rel="icon" href="{% static 'img/logo.png' %}" />
+   <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+   <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
+  <link href="{% static 'vendor/font-awesome/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script type="text/javascript" src="{% static 'js/functions.js' %}"></script>
+
+</head>
+<body class="container-fluid">
+    <div class="row fixed-top">
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg">
+            <a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" class="menu-img"></a>
+            <button class="navbar-toggler menu-btt m-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">
+              <i class="fa fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item active">
+                  <a class="nav-link menu-txt p-3" href="{% url 'home' %}">Inicio</a>
+                </li>
+
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle menu-txt p-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+            Planes Salud
+          </a>
+          <ul class="dropdown-menu" style="background-color: rgba(0, 119, 255, 0.4); margin-top: 7.5px;" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item menu-txt p-3" href="{% url 'planes' 'perro' %}">Perros</a></li>
+            <li><a class="dropdown-item menu-txt p-3" href="{% url 'planes' 'gato' %}">Gatos</a></li>
+          </ul>
+        </li>
+
+
+                <li class="nav-item active">
+                  <a class="nav-link menu-txt p-3" href="{% url 'piensos' %}">Piensos Bittal</a>
+                </li>
+                <li class=" nav-item active">
+                  <a class="nav-link menu-txt p-3" href="{% url 'blogs' %}">Blog</a>
+                </li>
+                <li class=" nav-item active">
+                  <a class="nav-link menu-txt p-3" href="{% url 'formulario' %}">Contacta</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      {% block contenido %} {%endblock%}
+
+
+      <div style="width: 100%; float: left;">
+        <div class="row contacta">
+          <div class="personal col-12 col-lg-4 m-2 m-lg-0"><ul>
+            <li><p><strong>Nuestro horario:</strong></p></li>
+            <li><strong>Lunes a viernes:</strong><a href="">  10:30 - 13:30  y  17:30 - 20:30</a></li>
+            <li><strong>Sábados:</strong><a href="">  10:30 - 13:30</a></li>
+        </ul></div>
+          <div class="personal col-12 col-lg-4 m-2 m-lg-0">
+              <ul>
+                <li><p><strong>Para pedir cita:</strong></p></li>
+                <li><strong>Teléfono:</strong> <a href="tel:+916695625">91 669 56 25</a></li>
+                <li><strong>Whatsapp:</strong> <a href="tel:+601262476">601 26 24 76</a></li>
+                <li><strong>E-mail:</strong> <a href="mailto:cveterinariasanfernando@gmail.com">cveterinariasanfernando@gmail.com</a> </li>
+            </ul>
+          </div>
+          <div class="personal col-12 col-lg-4 m-2 m-lg-0"><ul>
+            <li><p><strong>Nuestras redes sociales:</strong></p></li>
+            <li><i class="fab fa-facebook-f"> :</i><a href="https://www.facebook.com/clinicaveterinariasanfernando/">    @clinicaveterinariasanfernando</a></li>
+            <li><i class="fab fa-instagram" aria-hidden="true"></i> :
+                      <a href="https://www.instagram.com/clinicaveterinariasanfernando/?hl=es" class="icon-instagram">    @clinicaveterinariasanfernando</a></li>
+        </ul></div>
+        <div class="personal col-12 text-center mt-2">
+          <ul><li style="font-size:12.5px">&copy; 2022 | Clínica Veterinaria San Fernando</li></ul>
+        </div>
+      </div>
+      </div>
+</body>
+</html>

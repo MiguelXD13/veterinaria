@@ -1,0 +1,254 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block contenido %}
+<div class="row">
+    <div class="col-12 text-center">
+        <h3 class="title">{{titulo}}</h3>
+    </div>
+</div>
+<hr>
+<div class="row">
+    <div class="col-8 offset-2 planesText">
+        <p>Desde la Clínica Veterinaria San Fernando ponemos a tu disposición varios planes de salud para el cuidado
+            preventivo de tus mascotas y mejora de su calidad de vida.</p>
+        <p>Nuestros planes de salud no se tratan de un seguro sanitario para tu mascota donde cuidamos de tu mascota
+            cuando está enferma o tiene un accidente. Nos centramos en la prevención gracias a unos planes de salud
+            donde accedes a nuestros servicios a unos precios muy especiales y con facilidades de pago.</p>
+        <p>Todo esto nos permite planificar mucho mejor los servicios y tratamientos que necesita tu mascota a lo largo
+            del año y por supuesto ante cualquier eventualidad que pueda surgir.</p>
+    </div>
+</div>
+{% if animal == 'perro' %}
+    <div class="plani">
+        <div class="i"><img src="{% static 'img/perros1.jpg' %}" class="citaImg"></div>
+        <h1 class="citaTitle text-center">Perros Adultos</h1>
+        <p class="citaText2">Incluye durante un año:</p>
+        <p class="citaText">
+        <ul>
+            <li class="citaText">
+                Todas las consultas gratis (no incluye tratamientos inyectables)
+            </li>
+            <li class="citaText">
+                Certificación oficial de salud anual
+            </li>
+            <li class="citaText">
+                Vacuna antirrábica
+            </li>
+            <li class="citaText">
+                Vacunación pentavalente (moquillo, hepatitis vírica, leptospirosis, parvovirosis y enfermedades respiratorias)
+            </li>
+            <li class="citaText">
+                Cuatro desparasitaciones
+            </li>
+            <li class="citaText">
+                Dos análisis de heces
+            </li>
+            <li class="citaText">
+                Test de Leishmania
+            </li>
+            <li class="citaText">
+                Plan nutricional específico en función de la raza, peso y edad del perro
+            </li>
+        </ul>
+        <div class="desplegable" id="1">
+            <p class="citaText2">Además tendrás importantes descuentos:</p>
+            <ul>
+                <li class="citaText">30% en cirugías y procedimientos clínicos realizados en la clínica
+                </li>
+                <li class="citaText">20% en electrocardiogramas, ecografías y radiografías</li>
+                <li class="citaText">20% en análisis de sangre y orina</li>
+                <li class="citaText">5% en tratamientos</li>
+                <li class="citaText">5%  en vacuna de Leishmania</li>
+                <li class="citaText">10% en identificación microchip</li>
+                <li class="citaText">10% en alimentación (piensos) y tienda</li>
+            </ul>
+        </div>
+        <p class="planLink" id="L1">Ver más</p>
+        <p class="planLink" id="L11">Ver menos</p>
+    </div>
+    
+    
+    <div class="planm">
+        <div class="i"><img src="{% static 'img/perros2.jpg' %}" class="citaImg"></div>
+        <h1 class="citaTitle text-center">Perros Cachorros</h1>
+        <p class="citaText2">Incluye durante un año:</p>
+        <p class="citaText">
+        <ul>
+            <li class="citaText">
+                Todas las consultas gratis (no incluye tratamientos inyectables)
+            </li>
+            <li class="citaText">
+                Certificación oficial de salud anual
+            </li>
+            <li class="citaText">
+                Vacuna antirrábica
+            </li>
+            <li class="citaText">
+                Vacunación completa contra las enfermedades más comunes (moquillo, hepatitis vírica, leptospirosis, parvovirosis y enfermedades respiratorias)
+            </li>
+            <li class="citaText">
+                Todas las desparasitaciones internas  que requiera durante un año
+            </li>
+            <li class="citaText">
+                Dos análisis de heces
+            </li>
+            <li class="citaText">
+                Test de Leishmania
+            </li>
+            <li class="citaText">
+                Plan nutricional específico en función de la raza, peso y edad del perro
+            </li>
+            <li class="citaText">Identificación/Microchip</li>
+        </ul>
+        <div class="desplegable" id="2">
+            <p class="citaText2">Además tendrás importantes descuentos:</p>
+            <ul>
+                <li class="citaText">30% en cirugías y procedimientos clínicos realizados en la clínica</li>
+                <li class="citaText">20% en electrocardiogramas, ecografías y radiografías</li>
+                <li class="citaText">20% en análisis de sangre y orina</li>
+                <li class="citaText">5% en tratamientos</li>
+                <li class="citaText">10%  en vacuna de Leishmania</li>
+                <li class="citaText">10% en alimentación (piensos) y tienda</li>
+            </ul>
+        </div>
+        <p class="planLink" id="L2">Ver más</p>
+        <p class="planLink" id="L22">Ver menos</p>
+    </div>
+    
+    <div class="pland">
+        <div class="i"><img src="{% static 'img/perros3.jpg' %}" class="citaImg"></div>
+        <h1 class="citaTitle text-center">Especial Prevención</h1>
+        <p class="citaText2">Incluye durante un año:</p>
+        <p class="citaText">
+        <ul>
+            <li class="citaText">
+                Consultas ordinarias y de seguimiento con DESCUENTO DEL 50% (no incluye tratamientos) 
+            </li>
+            <li class="citaText">
+                Certificación oficial de salud anual
+            </li>
+            <li class="citaText">
+                Revisión general en cada visita programada
+            </li>
+            <li class="citaText">
+                Vacuna antirrábica
+            </li>
+            <li class="citaText">
+                Vacunación pentavalente  (moquillo, hepatitis vírica, leptospirosis, parvovirosis y enfermedades respiratorias)
+            </li>
+            <li class="citaText">
+                Una desparasitación interna por trimestre
+            </li>
+            <li class="citaText">
+                Valoración ICC (índice condición corporal)
+            </li>
+        </ul>
+        <div class="desplegable" id="3">
+            <p class="citaText2">Además tendrás importantes descuentos:</p>
+            <ul>
+                <li class="citaText">30% en cirugías y procedimientos clínicos realizados en la clínica</li>
+                <li class="citaText">20% en electrocardiogramas, ecografías y radiografías</li>
+                <li class="citaText">20% en análisis de sangre y orina</li>
+                <li class="citaText">5% en tratamientos</li>
+                <li class="citaText">10%  en vacuna de Leishmania</li>
+                <li class="citaText">10% en alimentación (piensos) y tienda</li>
+            </ul>
+        </div>
+        <p class="planLink" id="L3">Ver más</p>
+        <p class="planLink" id="L33">Ver menos</p>
+    </div>
+{% endif %}
+{% if animal == 'gato' %}
+    <div class="citai">
+        <div class="i"><img src="{% static 'img/gatos1.jpg' %}" class="citaImg"></div>
+        <h1 class="citaTitle text-center">Gatos Adultos</h1>
+        <p class="citaText2">Incluye durante un año:</p>
+        <p class="citaText">
+        <ul>
+            <li class="citaText">
+                Todas las consultas gratis (no incluye tratamientos inyectables)
+            </li>
+            <li class="citaText">
+                Certificación oficial de salud anual
+            </li>
+            <li class="citaText">
+                Vacuna antirrábica
+            </li>
+            <li class="citaText">
+                Vacunación Tetravalente (Rinotraqueitis, Panleucopenia, Calicivirus y Leucemia felina)
+            </li>
+            <li class="citaText">
+                Cuatro desparasitaciones
+            </li>
+            <li class="citaText">
+                Un análisis de heces
+            </li>
+            <li class="citaText">
+                Plan nutricional específico en función de la raza, peso y edad del gato
+            </li>
+        </ul>
+        <div class="desplegable" id="1">
+            <p class="citaText2">Además tendrás importantes descuentos:</p>
+            <ul>
+                <li class="citaText">30% en cirugías y procedimientos clínicos realizados en la clínica</li>
+                <li class="citaText">20% en electrocardiogramas, ecografías y radiografías</li>
+                <li class="citaText">20% en análisis de sangre y orina</li>
+                <li class="citaText">5% en tratamientos</li>
+                <li class="citaText">10% en identificación microchip</li>
+                <li class="citaText">10% en alimentación (piensos) y tienda</li>
+            </ul>
+        </div>
+        <p class="planLink" id="L1">Ver más</p>
+        <p class="planLink" id="L11">Ver menos</p>
+    </div>
+    
+    
+    <div class="citad">
+        <div class="i"><img src="{% static 'img/gatos2.jpg' %}" class="citaImg"></div>
+        <h1 class="citaTitle text-center">Gatos Cachorros</h1>
+        <p class="citaText2">Incluye durante un año:</p>
+        <p class="citaText">
+        <ul>
+            <li class="citaText">
+                Todas las consultas gratis (no incluye tratamientos inyectables)
+            </li>
+            <li class="citaText">
+                Certificación oficial de salud anual
+            </li>
+            <li class="citaText">
+                Vacuna antirrábica
+            </li>
+            <li class="citaText">
+                Vacunación Tetravalente (Rinotraqueitis, Panleucopenia, Calicivirus y Leucemia felina)
+            </li>
+            <li class="citaText">
+                Tres desparasitaciones
+            </li>
+            <li class="citaText">
+                Dos análisis de heces
+            </li>
+            <li class="citaText">
+                Test para la detección de Leucemia e Inmunodeficiencia
+            </li>
+            <li class="citaText">
+                Plan nutricional específico en función de la raza, peso y edad del gato
+            </li>
+            <li class="citaText">
+                Indentificación/Microchip
+            </li>
+        </ul>
+        <div class="desplegable" id="2">
+            <p class="citaText2">Además tendrás importantes descuentos:</p>
+            <ul>
+                <li class="citaText">30% en cirugías y procedimientos clínicos realizados en la clínica</li>
+                <li class="citaText">20% en electrocardiogramas, ecografías y radiografías</li>
+                <li class="citaText">20% en análisis de sangre y orina</li>
+                <li class="citaText">5% en medicamentos y tratamientos inyectables</li>
+                <li class="citaText">10% en alimentación (piensos) y tienda</li>
+            </ul>
+        </div>
+        <p class="planLink" id="L2">Ver más</p>
+        <p class="planLink" id="L22">Ver menos</p>
+    </div>
+{% endif %}
+{% endblock %}
